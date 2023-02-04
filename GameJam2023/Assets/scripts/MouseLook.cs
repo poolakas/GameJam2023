@@ -8,6 +8,13 @@ public class MouseLook : MonoBehaviour
     public Transform playerBody;
     float xRotation = 0f;
     // Start is called before the first frame update
+    public Transform cam;
+    public float playerActivatedDistance;
+    public Transform Button;
+    public Door door;
+    bool active = false;
+
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -16,6 +23,14 @@ public class MouseLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        RaycastHit hit;
+        active = Physics.Raycast(cam.position, cam.TransformDirection(Vector3.forward), out hit, playerActivatedDistance);
+        if(Input.GetKeyDown(KeyCode.F)){
+                if(hit.transform == Button){
+                    door.ActivateDoor();
+                }
+            
+        }
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
