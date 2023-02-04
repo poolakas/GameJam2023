@@ -24,8 +24,8 @@ public class AllSpawning : MonoBehaviour
         Vector3 uusPos = livePlayer.transform.position;
         uusPos.y += 15;
         uusPos.x -=4;
-        for(int x = 0;x<20;x++){
-            uusPos.y += 1;
+        for(int x = 0;x<5;x++){
+            uusPos.y += 0.5f;
             Instantiate(deadPlayer, uusPos, Quaternion.identity);
         }
         
