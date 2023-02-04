@@ -13,11 +13,14 @@ public class PlayerMovment : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
-    public GameObject spawner; 
-
-
     bool isGrounded;
     Vector3 velocity;
+
+
+    Camera cam;
+    void Start(){
+        cam = Camera.main;
+    }
     // Update is called once per frame
     void Update()
     {
