@@ -13,17 +13,17 @@ public class PlayerMovment : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
+    public GameObject spawner; 
+
+
     bool isGrounded;
     Vector3 velocity;
     // Update is called once per frame
     void Update()
     {
-       /*
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Destroy(gameObject);
-        }
-        */
+       
+        
+        
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
         if(isGrounded && velocity.y < 0)
         {
