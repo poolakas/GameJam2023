@@ -11,7 +11,7 @@ public class BodySpawner : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.E))
         {
-            for (int x = 0;x<3;x++)
+            for (int x = 0;x<20;x++)
         {
             
         
