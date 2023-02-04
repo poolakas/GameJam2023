@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8304116592490757725}
   - component: {fileID: 8304116592490757699}
   - component: {fileID: 8304116592490757724}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 8304116593438061052}
   - component: {fileID: 9066260686031824362}
   - component: {fileID: 2491010832918926216}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DeadPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
