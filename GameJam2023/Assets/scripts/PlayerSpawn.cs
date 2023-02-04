@@ -5,16 +5,15 @@ using UnityEngine;
 public class PlayerSpawn : MonoBehaviour
 {
     public GameObject player;
+    public GameObject spawner;
     // Update is called once per frame
     void Update()
     {
-        /*
+
         if (Input.GetKeyDown(KeyCode.E))
         {
-            
-            Instantiate(player, transform.position, Quaternion.identity);
+            player.transform.position = spawner.transform.position;
         }
-        */
         
     }
 }
