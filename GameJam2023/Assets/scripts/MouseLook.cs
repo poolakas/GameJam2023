@@ -10,8 +10,10 @@ public class MouseLook : MonoBehaviour
     // Start is called before the first frame update
     public Transform cam;
     public float playerActivatedDistance;
-    public Transform Button;
-    public Door door;
+    public Transform ButtonDoor1;
+    public Transform ButtonDoor2;
+    public Door door1;
+    public Door door2;
     bool active = false;
 
 
@@ -26,8 +28,9 @@ public class MouseLook : MonoBehaviour
         RaycastHit hit;
         active = Physics.Raycast(cam.position, cam.TransformDirection(Vector3.forward), out hit, playerActivatedDistance);
         if(Input.GetKeyDown(KeyCode.F)){
-                if(hit.transform == Button){
-                    door.ActivateDoor();
+                if(hit.transform == ButtonDoor1 || hit.transform == ButtonDoor2){
+                    door2.ActivateDoor();
+                    door1.ActivateDoor();
                 }
             
         }

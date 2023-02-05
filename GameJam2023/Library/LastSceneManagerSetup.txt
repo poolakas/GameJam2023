@@ -1,9 +1,9 @@
 sceneSetups:
-- path: Assets/Scenes/realMenu.unity
+<<<<<<< HEAD
+- path: Assets/Scenes/HUD.unity
+=======
+- path: Assets/Scenes/RealMainScene.unity
+>>>>>>> b95bdc1005d953db64be4cc8c96f884d28265c91
   isLoaded: 1
   isActive: 1
-  isSubScene: 0
-- path: Assets/Scenes/Audio.unity
-  isLoaded: 1
-  isActive: 0
   isSubScene: 0
