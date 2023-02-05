@@ -1,0 +1,12 @@
+Unity Editor version:    2021.3.15f1 (e8e88683f834)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+System name:             Linux
+Distro version:          #64~20.04.1-Ubuntu SMP Fri Jan 6 16:42:31 UTC 2023
+Kernel version:          5.15.0-58-generic
+Architecture:            x86_64
+Available memory:        15846 MB
+Assertion failed on expression: 'IsFileCreated(kWorkerLicensePath)'
+Assertion failed on expression: 'ok'
+Using pre-set license
